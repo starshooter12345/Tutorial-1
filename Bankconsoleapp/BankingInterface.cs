@@ -28,21 +28,29 @@ namespace Bankconsoleapp
             }
             public int GetNumEntries()
             {
-                 return 0;
+                return dbclass.Accounts().Count;
             }
 
             public void GetValuesForEntry(int index, out uint acctNo,  out uint pin, out int bal,
             out string fName, out string lName)
             {
-                index = 0;
-                acctNo = 0;
-                pin = 0; 
-                bal = 0;
-                fName = "DDS";
-                lName = "jjjj";
+            //index = 0;
+            //acctNo = 0;
+            //pin = 0; 
+            //bal = 0;
+            //fName = "DDS";
+            //lName = "jjjj";
+
+            List<Account> slist = dbclass.Accounts();
+            acctNo = slist[index - 1].accNo;
+            pin = slist[index - 1].pin;
+            bal = slist[index - 1].balance;
+            fName = slist[index - 1].firstName;
+            lName = slist[index - 1].lastName;
+            
 
 
-            }
+        }
 
            
         }

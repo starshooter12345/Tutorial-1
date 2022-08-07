@@ -1,0 +1,25 @@
+﻿<Window x:Class="Bankingwpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bankingwpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="First_Name" HorizontalAlignment="Left" Margin="338,60,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top" Width="120" Grid.Column="1" Height="18"/>
+        <TextBox x:Name="Last_Name" HorizontalAlignment="Left" Margin="338,95,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="120" Grid.Column="1" Height="18"/>
+        <TextBox x:Name="Account_No" HorizontalAlignment="Left" Margin="338,136,0,0" TextWrapping="Wrap" Text="Account No" VerticalAlignment="Top" Width="120" Grid.Column="1" Height="18"/>
+        <TextBox x:Name="Pin" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pin" VerticalAlignment="Top" Width="120" Margin="338,172,0,0" Grid.Column="1" Height="18"/>
+        <TextBox x:Name="Balance" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Center" Width="120" Grid.Column="1" Margin="338,0,0,0" Height="18"/>
+        <Border x:Name="Line" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="1" Margin="0,273,0,0" VerticalAlignment="Top" Width="800" Grid.Column="1"/>
+        <Button x:Name="Go" Content="Go!" HorizontalAlignment="Left" Margin="663,306,0,0" VerticalAlignment="Top" Click="Button_Click" Grid.Column="1" Height="20" Width="63"/>
+        <TextBox x:Name="Index" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="196,306,0,0" TextWrapping="Wrap" Text="Index?" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Total_Items" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="196,349,0,0" TextWrapping="Wrap" Text="Total Items" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
