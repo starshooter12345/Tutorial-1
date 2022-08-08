@@ -41,12 +41,12 @@ namespace Bankconsoleapp
             //fName = "DDS";
             //lName = "jjjj";
 
-            List<Account> slist = dbclass.Accounts();
-            acctNo = slist[index - 1].accNo;
-            pin = slist[index - 1].pin;
-            bal = slist[index - 1].balance;
-            fName = slist[index - 1].firstName;
-            lName = slist[index - 1].lastName;
+            List<Account> alist = dbclass.Accounts();
+            acctNo = alist[index - 1].accNo;
+            pin = alist[index - 1].pin;
+            bal = alist[index - 1].balance;
+            fName = alist[index - 1].firstName;
+            lName = alist[index - 1].lastName;
             
 
 
