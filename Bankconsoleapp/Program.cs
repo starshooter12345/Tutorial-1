@@ -15,7 +15,8 @@ namespace Bankconsoleapp
             NetTcpBinding tcp = new NetTcpBinding();
             host = new ServiceHost(typeof(DatabaseServer));
             host.AddServiceEndpoint(typeof(BankingInterface), tcp,
-"net.tcp://0.0.0.0:8100/DataService");
+            "net.tcp://0.0.0.0:8100/DataService");
+            //host.AddServiceEndpoint(typeof(BankingInterface), tcp, "net.tcp://localhost:8100/DataService");
 
             host.Open();
             Console.WriteLine("System Online");
